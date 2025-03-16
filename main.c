@@ -33,9 +33,9 @@ typedef struct {
 }Ilac;
 
 Ilac tumIlac[MAX_UZUNLUK];
-Ilac receteYazilmişIlac[MAX_UZUNLUK];
+Ilac receteYazilmisIlac[MAX_UZUNLUK];
 int tumIlac_sirasi = 0;
-int receteYazilmişIlacSirasi = 0;
+int receteYazilmisIlacSirasi = 0;
 
 //fonksiyonlar
 void anaMenu();
@@ -187,7 +187,7 @@ void hastaKayit() {
 
 void hastaTani() {
     int hastaID;
-    printf("Teshis edileecek hastanin ID numarasi : ");
+    printf("Teshis edilecek hastanin ID numarasi : ");
     scanf("%d", &hastaID);
 
     for (int i = 0; i < hasta_sirasi; i++) {
@@ -248,9 +248,9 @@ void ilacReceteYazdir() {
 
             for (int j = 0; j < hasta_sirasi; j++) {
                 if (strcmp(tumIlac[j].ad, ilacAdi) == 0) {
-                    receteYazilmişIlac[receteYazilmişIlacSirasi] = tumIlac[j];
-                    receteYazilmişIlacSirasi++;
-                    printf("ilac basariyla receeye eklendi");
+                    receteYazilmisIlac[receteYazilmisIlacSirasi] = tumIlac[j];
+                    receteYazilmisIlacSirasi++;
+                    printf("ilac basariyla receteye eklendi");
                     return;
                 }
             }
