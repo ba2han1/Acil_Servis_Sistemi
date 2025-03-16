@@ -1,0 +1,3 @@
+Kod bazı derleyicilerle çalışmayabilir bunun sebebi ise for döngülerinin parantez içlerinde indekslerin tanımlanmasıdır.
+
+Bu durumu düzeltmek için indeks tanımlıklarını for döngüsü öncesi olarak değiştirin.Yada C için olan daha güncel İDE'leri kullanın.
